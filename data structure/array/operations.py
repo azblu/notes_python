@@ -18,3 +18,8 @@ print(fruits)
 fruits.insert(2, 'Coco')
 print(fruits)
 
+# List Comprehension
+print('Create List Comprehension')
+sqare = list(map(lambda x: x**2, range(10)))
+print(sqare)
+
