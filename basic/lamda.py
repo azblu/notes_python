@@ -15,3 +15,8 @@ print(suma_resta(4,6,8,2))
 a = [1, 5, 8]
 b = [7, 9 , 2, 3]
 print(list(map(lambda x, y: x+y, a, b)))
+
+
+numbers = list(range(0,15))
+new_numbers = list(filter(lambda x: x%2==0, numbers))
+print(new_numbers)
