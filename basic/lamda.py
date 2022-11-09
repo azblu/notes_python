@@ -1,7 +1,7 @@
 fullname = lambda x, y : f'{x} {y}'
 print(fullname('Sam', 'Johnson'))
 
-
+# Map
 names = ['Sam', 'Paula', 'Valentina', 'Justin']
 lastnames = ['Smith', 'Johnson', 'Williams', 'Brown']
 print(list(map(lambda x, y : f'{x} {y}', names, lastnames)))
@@ -16,7 +16,7 @@ a = [1, 5, 8]
 b = [7, 9 , 2, 3]
 print(list(map(lambda x, y: x+y, a, b)))
 
-
+# Filter
 numbers = list(range(0,15))
 new_numbers = list(filter(lambda x: x%2==0, numbers))
 print(new_numbers)
@@ -48,3 +48,25 @@ matches = [
 
 new_list = list(filter(lambda x: x['home_team_result'] =='Win', matches))
 print(new_list)
+
+
+# Reduce
+
+import functools
+
+numbers = [1, 2, 3, 4]
+
+result = functools.reduce(lambda counter, item: counter + item, numbers )
+
+print(result)
+
+
+def accum(counter, item):
+  print('counter => ',counter)
+  print('item => ',item)
+  return counter + item
+
+result = functools.reduce(accum, numbers)
+
+print(result)
+
