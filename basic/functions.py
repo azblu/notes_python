@@ -4,7 +4,8 @@ def suma(x,y):
 def resta(x, y):
   return x-y
 
-def operation(x, y, func):
-  return func(x, y)
+def operation(x,y,func):
+  return func(x,y)
 
-print(operation(4, 6, resta))
+print(operation(2,5, suma))
+print(operation(2,5, resta))
