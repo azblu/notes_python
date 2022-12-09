@@ -3,22 +3,16 @@ print(value)
 print(not value)
 print(not(not value))
 
-
-
-
 #Indexing y slicing
-
-text = "Ella sabe Python"
+text = "Justin & Violeta"
 print(text[0])
 print(text[1])
-# print(text[999])
+print(text[1:5])
+print(text[1:-1:2])
 size = len(text)
 print('size => ',size)
 print(text[size - 1])
 print(text[-1])
-
-## slicing
-
 print(text[0:5])
 print(text[10:16])
 print(text[:10])
