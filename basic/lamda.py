@@ -1,5 +1,5 @@
-fullname = lambda x, y : f'{x} {y}'
-print(fullname('Sam', 'Johnson'))
+fullname = lambda x, y: f'{x} {y}'
+print(fullname('Violeta', 'Justin'))
 
 # Map
 names = ['Sam', 'Paula', 'Valentina', 'Justin']
