@@ -1,5 +1,5 @@
 suma = lambda x, y: x + y
-assert suma(2, 2) == 4
+assert suma(2, 2) == 5
 
 age = 10
 if age<18:
