@@ -38,3 +38,24 @@ def CB():
     print(num)
 
 CB()
+
+#Example 4
+def infinite_sequence():
+  i = 0
+  while True:
+    yield i
+    i = i+1
+
+def cD2():
+  num = infinite_sequence()
+  print(next(num))
+  print(next(num))
+  print(next(num))
+  print(next(num))
+
+def cD():
+  for i in infinite_sequence():
+    print(i)
+
+#cD()
+cD2()
