@@ -10,3 +10,16 @@ def CA():
 CA()
 
 # Example 2
+def nextSquare():
+  i = 1
+  while True:
+    yield i * 1
+    i = i+1
+
+def CB():
+  for num in nextSquare():
+    if num > 100:
+      break
+    print(num)
+
+CB()
